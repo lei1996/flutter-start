@@ -8,8 +8,3 @@ services:
     # 开放端口，随机分布到宿主机
     ports:
       - "4567"
-
-# 卷
-volumes:
-  db-data:
-  dgraph:

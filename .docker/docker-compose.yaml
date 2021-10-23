@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  flutterDevEnv:
+    image: cirrusci/flutter:stable
+    # 保持容器持续运行
+    tty: true        # docker run -t
+    stdin_open: true # docker run -i
+    # 开放端口，随机分布到宿主机
+    ports:
+      - "4567"
+
+# 卷
+volumes:
+  db-data:
+  dgraph:
